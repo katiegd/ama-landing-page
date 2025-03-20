@@ -90,16 +90,16 @@ export default function App() {
               )}
             </button>
           </form>
+          {report && (
+            <div className="w-4/6 p-10 bg-white/20 mb-10">
+              <p>Date: {formData.date}</p>
+              <p>Location: {formData.location}</p>
+              <p>Air Quality: {formData.airQuality}</p>
+              <p>Water pH: {formData.waterPh}</p>
+              {report}
+            </div>
+          )}
         </div>
-        {report && (
-          <div className="w-4/6 p-10 bg-white/20 mb-10">
-            <p>Date: {formData.date}</p>
-            <p>Location: {formData.location}</p>
-            <p>Air Quality: {formData.airQuality}</p>
-            <p>Water pH: {formData.waterPh}</p>
-            {report}
-          </div>
-        )}
       </div>
     </>
   );
