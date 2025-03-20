@@ -6,18 +6,12 @@ I have prepared a concise landing webpage/application that integrates with Mistr
 
 To set up and run this application locally, clone the repository using
 
-git clone git@github.com:katiegd/ama-landing-page.git
+<code>git clone git@github.com:katiegd/ama-landing-page.git</code>
 
 Navigate to ama-landing-page in your terminal. You will need to run the server in order to connect to the server. Type
 
-node app
+<code>node app</code>
 
 into the terminal. You are now connected to the server.
 
-To fun the front end, open a new terminal window and run:
-
-npm run dev
-
-You will have your front end up on http://localhost:5173.
-
-You should now be able to generate reports!
+Navigate to https://katiegd.github.io/ama-landing-page/ and you should now be able to generate reports!
