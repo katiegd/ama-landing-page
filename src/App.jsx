@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Input from "../components/Input";
 import Header from "./Header";
+import bgImage from "../public/shifaaz-shamoon-sLAk1guBG90-unsplash.jpg";
 
 export default function App() {
   const [formData, setFormData] = useState({
@@ -41,10 +42,9 @@ export default function App() {
     <>
       {" "}
       <Header />
-      <div className="font-mono container flex flex-col items-center pt-5 bg-gradient-to-t from-slate-900 to-black min-h-screen text-slate-200">
-        {" "}
-        <div className=" min-w-[50%] p-10 rounded-3xl flex flex-col gap-10 items-center">
-          <h1 className=" text-3xl font-bold underline underline-offset-2 decoration-red-800 decoration-2">
+      <div className="font-mono container flex flex-col items-center min-h-screen text-slate-200 background">
+        <div className=" min-w-screen min-h-screen  flex flex-col gap-10 items-center bg-gradient-to-t from-slate-900/30 to-black/90">
+          <h1 className=" text-3xl font-bold underline underline-offset-2 decoration-red-800 decoration-2 mt-10">
             Generate Environmental Report
           </h1>
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
