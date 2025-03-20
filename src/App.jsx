@@ -21,13 +21,16 @@ export default function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:3000/generate-report", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://ama-landing-page-sigma.vercel.app/generate-report",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const data = await response.json();
       setLoading(false);
