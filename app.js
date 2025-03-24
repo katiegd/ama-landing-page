@@ -16,10 +16,6 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-  res.send("Hello world.");
-});
-
 app.post("/generate-report", async (req, res) => {
   const { date, location, airQuality, waterPh } = req.body;
 

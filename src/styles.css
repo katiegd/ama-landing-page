@@ -2,4 +2,6 @@
 
 .background {
   background-image: url("../public/shifaaz-shamoon-sLAk1guBG90-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
